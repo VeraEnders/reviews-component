@@ -12,8 +12,90 @@
   <!-- The Play CDN is designed for development purposes only, and is not the best choice for production. -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  
+<body class="min-h-screen flex justify-center items-center bg-[#1d1c2c] text-white">
+  <div class="py-12 px-8 w-96 bg-[#221f32] rounded-xl">
+    <h1>Reviews</h1>
+
+    <form action="#">
+
+      <!-- Input field -->
+      <label for="search">
+        <input type="text" id="search" aria-placeholder="left" placeholder="Search review">
+        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+        </svg>
+      </label>
+
+      <!-- Tags -->
+      <div>
+        <div>Experiennce</div>
+        <div>Quality</div>
+        <div>Design</div>
+        <div>Size</div>
+        <div>Features</div>
+        <div>Value</div>
+        <div>Replacement</div>
+      </div>
+    </form>
+
+    <!-- Reviews -->
+    <section>
+      <!-- First review -->
+      <article>
+        <header>
+          <h2>John Hopkins</h2>
+          <div class="flex">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+          </div>
+        </header>
+        <p>
+          Gorgeous design! Even more responsive than the previous version. A pleasure to use!
+        </p>
+        <div>
+          <div>
+            <span>Feb 12, 2024</span>
+            <svg class="w-[1rem]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/>
+              <path class="group-hover:fill-blue-500" d="M19,21H5a2,2,0,0,1-2-2V17a1,1,0,0,1,2,0v2H19V17a1,1,0,0,1,2,0v2A2,2,0,0,1,19,21Z" fill="#94a3b8"/>
+              <path class="group-hover:fill-blue-500" d="M15.71,10.29l-3-3a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-3,3a1,1,0,0,0-.21,1.09A1,1,0,0,0,9,12h2v3a1,1,0,0,0,2,0V12h2a1,1,0,0,0,.92-.62A1,1,0,0,0,15.71,10.29Z" fill="#94a3b8"/>
+            </svg>
+            <span>Share</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Second review -->
+      <article>
+        <header>
+          <h2>Alice Banks</h2>
+          <div class="flex">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+            <img src="./src/icons/star.svg" alt="star icon">
+          </div>
+        </header>
+        <p>
+          The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make it a pleasure to look at.
+        </p>
+        <div>
+          <div>
+            <span>Feb 15, 2024</span>
+            <svg class="w-[1rem]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/>
+              <path class="group-hover:fill-blue-500" d="M19,21H5a2,2,0,0,1-2-2V17a1,1,0,0,1,2,0v2H19V17a1,1,0,0,1,2,0v2A2,2,0,0,1,19,21Z" fill="#94a3b8"/>
+              <path class="group-hover:fill-blue-500" d="M15.71,10.29l-3-3a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-3,3a1,1,0,0,0-.21,1.09A1,1,0,0,0,9,12h2v3a1,1,0,0,0,2,0V12h2a1,1,0,0,0,.92-.62A1,1,0,0,0,15.71,10.29Z" fill="#94a3b8"/>
+            </svg>
+            <span>Share</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
   <script src="./src/index.js"></script>
 </body>
 </html>
