@@ -12,28 +12,34 @@
   <!-- The Play CDN is designed for development purposes only, and is not the best choice for production. -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen flex justify-center items-center bg-[#1d1c2c] text-white">
+<body class="min-h-screen flex justify-center items-center bg-[#1d1c2c]">
   <div class="py-12 px-8 w-96 bg-[#221f32] rounded-xl">
-    <h1 class="text-lg font-medium">Reviews</h1>
+    <h1 class="text-lg font-medium text-white">Reviews</h1>
 
     <form action="#">
       <!-- Input field -->
       <label class="relative" for="search">
-        <input class="w-full mt-4 py-2 px-12 rounded-md text-left outline-none bg-[#262538] text-white border border-slate-400 focus:bg-white focus:border-transparent active:bg-white focus:text-[#1d1c2c]" type="text" id="search" aria-placeholder="left" placeholder="Search review">
-        <svg class="w-5 absolute top-0 left-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <input 
+          class="w-full mt-4 py-2 px-12 rounded-md text-left outline-none bg-[#262538] text-white border border-slate-400 focus:bg-white focus:border-transparent focus:text-[#1d1c2c]" 
+          type="text" 
+          id="search" 
+          aria-placeholder="left" 
+          placeholder="Search review"
+        />
+        <svg class="w-5 absolute top-0 left-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
         </svg>
       </label>
 
       <!-- Tags -->
-      <div class="flex flex-wrap gap-2 items-center mt-4 *:py-2 *:px-4 *:text-slate-400 *:text-xs *:rounded-md *:cursor-pointer *:transition-all">
-        <div class="hover:-translate-y-0.5">Experiennce</div>
-        <div class="hover:-translate-y-0.5">Quality</div>
-        <div class="hover:-translate-y-0.5">Design</div>
-        <div class="hover:-translate-y-0.5">Size</div>
-        <div class="hover:-translate-y-0.5">Features</div>
-        <div class="hover:-translate-y-0.5">Value</div>
-        <div class="hover:-translate-y-0.5">Replacement</div>
+      <div class="flex flex-wrap gap-2 items-center mt-4 *:py-2 *:px-4 *:text-xs *:rounded-md *:cursor-pointer *:transition-all">
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Experiennce</div>
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Quality</div>
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Design</div>
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Size</div>
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Features</div>
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Value</div>
+        <div class="text-slate-400 hover:-translate-y-0.5" id="tag">Replacement</div>
       </div>
     </form>
 
