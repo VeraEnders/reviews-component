@@ -13,8 +13,11 @@ tags.forEach(tag => tag.addEventListener('click', function(e) {
 
   search.value = `${clickedText}`;
   search.classList.add('text-white');
+
 }));
 
-search.addEventListener('click', function() {
-  search.classList.remove('text-white');
-})
+search.addEventListener('input', function() {
+  tags.forEach(tag => {
+    tag.classList.remove('bg-[#8781f9]', 'text-white');
+  })
+});
