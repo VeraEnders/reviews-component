@@ -27,24 +27,24 @@
       </label>
 
       <!-- Tags -->
-      <div>
-        <div>Experiennce</div>
-        <div>Quality</div>
-        <div>Design</div>
-        <div>Size</div>
-        <div>Features</div>
-        <div>Value</div>
-        <div>Replacement</div>
+      <div class="flex flex-wrap gap-2 items-center mt-4 *:py-2 *:px-4 *:text-slate-400 *:text-xs *:rounded-md *:cursor-pointer *:transition-all">
+        <div class="hover:-translate-y-0.5">Experiennce</div>
+        <div class="hover:-translate-y-0.5">Quality</div>
+        <div class="hover:-translate-y-0.5">Design</div>
+        <div class="hover:-translate-y-0.5">Size</div>
+        <div class="hover:-translate-y-0.5">Features</div>
+        <div class="hover:-translate-y-0.5">Value</div>
+        <div class="hover:-translate-y-0.5">Replacement</div>
       </div>
     </form>
 
     <!-- Reviews -->
-    <section>
+    <section class="mt-12 space-y-3 *:bg-[#2d2c41] *:py-6 *:px-4 *:rounded-lg *:text-slate-300 *:transition-all">
       <!-- First review -->
-      <article>
-        <header>
-          <h2>John Hopkins</h2>
-          <div class="flex">
+      <article class="hover:scale-105">
+        <header class="flex flex-wrap justify-between items-left gap-2">
+          <h2 class="before:content-['J'] before:mr-2 before:flex before:items-center before:justify-center before:w-9 before:h-9 before:bg-[#d76a75] before:rounded-full | flex items-center text-white">John Hopkins</h2>
+          <div class="ml-auto flex items-center space-x-1">
             <img src="./src/icons/star.svg" alt="star icon">
             <img src="./src/icons/star.svg" alt="star icon">
             <img src="./src/icons/star.svg" alt="star icon">
@@ -52,26 +52,26 @@
             <img src="./src/icons/star.svg" alt="star icon">
           </div>
         </header>
-        <p>
+        <p class="mt-6 text-sm">
           Gorgeous design! Even more responsive than the previous version. A pleasure to use!
         </p>
-        <div>
-          <div>
-            <span>Feb 12, 2024</span>
+        <div class="mt-4 flex items-center justify-between">
+          <p class="text-xs text-slate-400">Feb 15, 2024</p>
+          <div class="group py-1 px-2 flex items-center gap-1 border rounded-md border-[#1d1c2c] text-slate-400 cursor-pointer">
             <svg class="w-[1rem]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/>
               <path class="group-hover:fill-blue-500" d="M19,21H5a2,2,0,0,1-2-2V17a1,1,0,0,1,2,0v2H19V17a1,1,0,0,1,2,0v2A2,2,0,0,1,19,21Z" fill="#94a3b8"/>
               <path class="group-hover:fill-blue-500" d="M15.71,10.29l-3-3a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-3,3a1,1,0,0,0-.21,1.09A1,1,0,0,0,9,12h2v3a1,1,0,0,0,2,0V12h2a1,1,0,0,0,.92-.62A1,1,0,0,0,15.71,10.29Z" fill="#94a3b8"/>
             </svg>
-            <span>Share</span>
+            <span class="group-hover:text-blue-400 text-xs">Share</span>
           </div>
         </div>
       </article>
 
       <!-- Second review -->
-      <article>
-        <header>
-          <h2>Alice Banks</h2>
-          <div class="flex">
+      <article class="hover:scale-105">
+        <header class="flex flex-wrap justify-between items-left gap-2">
+          <h2 class="before:content-['A'] before:mr-2 before:flex before:items-center before:justify-center before:w-9 before:h-9 before:bg-[#d5a66d] before:rounded-full | flex items-center text-white">Alice Banks</h2>
+          <div class="ml-auto flex items-center space-x-1">
             <img src="./src/icons/star.svg" alt="star icon">
             <img src="./src/icons/star.svg" alt="star icon">
             <img src="./src/icons/star.svg" alt="star icon">
@@ -79,17 +79,17 @@
             <img src="./src/icons/star.svg" alt="star icon">
           </div>
         </header>
-        <p>
+        <p class="mt-6 text-sm">
           The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make it a pleasure to look at.
         </p>
-        <div>
-          <div>
-            <span>Feb 15, 2024</span>
+        <div class="mt-4 flex items-center justify-between">
+          <p class="text-xs text-slate-400">Feb 15, 2024</p>
+          <div class="group py-1 px-2 flex items-center gap-1 border rounded-md border-[#1d1c2c] text-slate-400 cursor-pointer">
             <svg class="w-[1rem]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/>
               <path class="group-hover:fill-blue-500" d="M19,21H5a2,2,0,0,1-2-2V17a1,1,0,0,1,2,0v2H19V17a1,1,0,0,1,2,0v2A2,2,0,0,1,19,21Z" fill="#94a3b8"/>
               <path class="group-hover:fill-blue-500" d="M15.71,10.29l-3-3a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-3,3a1,1,0,0,0-.21,1.09A1,1,0,0,0,9,12h2v3a1,1,0,0,0,2,0V12h2a1,1,0,0,0,.92-.62A1,1,0,0,0,15.71,10.29Z" fill="#94a3b8"/>
             </svg>
-            <span>Share</span>
+            <span class="group-hover:text-blue-400 text-xs">Share</span>
           </div>
         </div>
       </article>
